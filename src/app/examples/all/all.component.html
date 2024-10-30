@@ -32,30 +32,29 @@
         <mat-option value="outline">outline</mat-option>
         <mat-option value="fill">fill</mat-option>
       </mat-select>
-      <mat-hint
-        ><a href="https://github.com/angular/components/issues/18310"
-          >Changing Appearence bugs: PlaceHolder</a
-        ></mat-hint
-      >
+      <mat-hint>
+        <a href="https://github.com/angular/components/issues/18310">
+          Changing Appearence bugs: PlaceHolder
+        </a>
+      </mat-hint>
     </mat-form-field>
     <mat-form-field appearance="outline" class="mb-4">
       <mat-label>Label</mat-label>
       <input matInput type="text" formControlName="label" />
-      <mat-hint
-        ><a href="https://github.com/angular/components/issues/18310"
-          >Changing Label makes Appearance turn "outline" and PlaceHolder to
-          "initialValue"</a
-        ></mat-hint
-      >
+      <mat-hint>
+        <a href="https://github.com/angular/components/issues/18310">
+          Changing Label makes Appearance turn "outline" and PlaceHolder to "initialValue"
+        </a>
+      </mat-hint>
     </mat-form-field>
     <mat-form-field appearance="outline" class="mb-2">
       <mat-label>PlaceHolder</mat-label>
       <input matInput type="text" formControlName="placeHolder" />
-      <mat-hint
-        ><a href="https://github.com/angular/components/issues/18310"
-          >Changing PlaceHolder makes Appearance turn "outline"</a
-        ></mat-hint
-      >
+      <mat-hint>
+        <a href="https://github.com/angular/components/issues/18310">
+          Changing PlaceHolder makes Appearance turn "outline"
+        </a>
+      </mat-hint>
     </mat-form-field>
     <mat-form-field appearance="outline">
       <mat-label>Class</mat-label>
@@ -86,10 +85,7 @@
       <mat-label>Language</mat-label>
       <mat-select [formControl]="languageControl" name="lang">
         <mat-option>None</mat-option>
-        <mat-option
-          *ngFor="let language of availableLanguages"
-          [value]="language.value"
-        >
+        <mat-option *ngFor="let language of availableLanguages" [value]="language.value">
           {{ language.viewValue }}
         </mat-option>
       </mat-select>
@@ -98,18 +94,18 @@
       <mat-checkbox formControlName="required">Required</mat-checkbox>
       <mat-checkbox formControlName="disabled">Disabled</mat-checkbox>
       <mat-checkbox formControlName="readonly">Readonly</mat-checkbox>
-      <mat-checkbox formControlName="showCallingCode"
-        >ShowCallingCode</mat-checkbox
-      >
+      <mat-checkbox formControlName="showCallingCode">
+        ShowCallingCode
+      </mat-checkbox>
       <mat-checkbox formControlName="cleareable">Cleareable</mat-checkbox>
       <mat-checkbox formControlName="extendWidth">ExtendWidth</mat-checkbox>
       <mat-checkbox formControlName="loading">Loading</mat-checkbox>
     </section>
     <section>
       <div class="example-label-container">
-        <label id="example-name-label" class="example-name-label"
-          >PanelWidth</label
-        >
+        <label id="example-name-label" class="example-name-label">
+          PanelWidth
+        </label>
         <label class="example-value-label">{{ _panelWidth }}</label>
       </div>
       <mat-slider
@@ -123,30 +119,26 @@
       >
         <input matSliderThumb formControlName="panelWidth" />
       </mat-slider>
-      <mat-checkbox formControlName="panelDisabled"
-        >PanelWidth disabled</mat-checkbox
-      >
+      <mat-checkbox formControlName="panelDisabled">
+        PanelWidth disabled
+      </mat-checkbox>
       <p class="hint">This width only applies to sub-options.</p>
     </section>
     <section>
       <mat-form-field appearance="fill">
         <mat-label>Predefined Countries</mat-label>
         <mat-select [formControl]="countriesControl" multiple>
-          <mat-option
-            *ngFor="let country of selectablecountries"
-            [value]="country.alpha2Code"
-            >{{ country?.name }}</mat-option
-          >
+          <mat-option *ngFor="let country of selectablecountries" [value]="country.alpha2Code">
+            {{ country?.name }}
+          </mat-option>
         </mat-select>
       </mat-form-field>
       <mat-form-field appearance="fill">
         <mat-label>Excluded Countries</mat-label>
         <mat-select [formControl]="excludedCountriesControl" multiple>
-          <mat-option
-            *ngFor="let country of selectablecountries"
-            [value]="country.alpha2Code"
-            >{{ country?.name }}</mat-option
-          >
+          <mat-option *ngFor="let country of selectablecountries" [value]="country.alpha2Code">
+            {{ country?.name }}
+          </mat-option>
         </mat-select>
       </mat-form-field>
     </section>
