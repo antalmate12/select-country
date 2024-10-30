@@ -19,7 +19,9 @@ import { AllFormControlComponent } from "./examples/all-formcontrol/all-formcont
 import { MatCheckboxModule } from "@angular/material/checkbox";
 import { MatSliderModule } from "@angular/material/slider";
 import { MatButtonModule } from "@angular/material/button";
-import { ToolbarComponent } from "./toolbar/toolbar.component";
+import { ToolbarComponent } from "./components/toolbar/toolbar.component";
+import { MatIconModule } from "@angular/material/icon";
+import { RocketShipCardComponent } from "./components/rocket-ship-card/rocket-ship-card.component";
 
 @NgModule({
   declarations: [
@@ -46,7 +48,10 @@ import { ToolbarComponent } from "./toolbar/toolbar.component";
     MatCheckboxModule,
     MatSliderModule,
     MatButtonModule,
+    MatIconModule,
+
     ToolbarComponent,
+    RocketShipCardComponent
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -11,8 +11,6 @@ import {GERMANY_COUNTRY} from "./examples/contants";
   styleUrls: ["./app.component.scss"],
 })
 export class AppComponent implements OnInit {
-  title = "select-country";
-
   defaultValue = {...GERMANY_COUNTRY};
   countryFormControl = new UntypedFormControl();
   countryRequiredFormControl = new UntypedFormControl(null, [
