@@ -37,7 +37,6 @@ import { MatButtonModule } from "@angular/material/button";
 
     HttpClientModule,
     AppRoutingModule,
-    FlexLayoutModule,
     MatSelectModule,
     Angulartics2Module.forRoot(),
     MarkdownModule.forRoot(),
